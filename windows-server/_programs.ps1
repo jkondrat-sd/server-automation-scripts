@@ -62,20 +62,20 @@ Install-Application -AppName "OpenSSL" `
 
 # Install .NET 10 Hosting Bundle
 Install-Application -AppName ".NET 10 Hosting Bundle" `
-    -AppExecutablePath  "C:\Program Files\IIS\Asp.Net Core Module\V2\110.0.25148" `
-    -InstallerUrl "https://builds.dotnet.microsoft.com/dotnet/aspnetcore/Runtime/10.0.0-preview.5.25277.114/dotnet-hosting-10.0.0-preview.5.25277.114-win.exe" `
+    -AppExecutablePath  "C:\Program Files\IIS\Asp.Net Core Module\V2\110.0.25297" `
+    -InstallerUrl "https://builds.dotnet.microsoft.com/dotnet/aspnetcore/Runtime/10.0.0/dotnet-hosting-10.0.0-win.exe" `
     -InstallerPath "$tempInstallerPath\dotnet-hosting-10.0.0-win.exe"
 
 # Install .NET 10 SDK
 Install-Application -AppName ".NET 10 SDK" `
-    -AppExecutablePath  "C:\Program Files\dotnet\sdk\10.0.100-preview.5.25277.114" `
-    -InstallerUrl "https://builds.dotnet.microsoft.com/dotnet/Sdk/10.0.100-preview.5.25277.114/dotnet-sdk-10.0.100-preview.5.25277.114-win-x64.exe" `
+    -AppExecutablePath  "C:\Program Files\dotnet\sdk\10.0.100" `
+    -InstallerUrl "https://builds.dotnet.microsoft.com/dotnet/Sdk/10.0.100/dotnet-sdk-10.0.100-win-x64.exe" `
     -InstallerPath "$tempInstallerPath\dotnet-sdk-10.0.0-win-x64.exe"
 
 # Install ASP.NET Core Runtime 10
 Install-Application -AppName "ASP.NET Core Runtime 10" `
-    -AppExecutablePath "C:\Program Files\dotnet\shared\Microsoft.AspNetCore.App\10.0.0-preview.5.25277.114" `
-    -InstallerUrl "https://builds.dotnet.microsoft.com/dotnet/Runtime/10.0.0-preview.5.25277.114/dotnet-runtime-10.0.0-preview.5.25277.114-win-x64.exe" `
+    -AppExecutablePath "C:\Program Files\dotnet\shared\Microsoft.AspNetCore.App\10.0.0" `
+    -InstallerUrl "https://builds.dotnet.microsoft.com/dotnet/Runtime/10.0.0/dotnet-runtime-10.0.0-win-x64.exe" `
     -InstallerPath "$tempInstallerPath\aspnetcore-runtime-10.0.0-win-x64.exe" `
     -InstallArgs "/quiet /norestart"
 
