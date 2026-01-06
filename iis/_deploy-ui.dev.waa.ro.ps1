@@ -11,10 +11,10 @@ $repoToken = Get-Content -Path $repoTokenFile -Raw
 
 Deploy-DotNetWebsite `
   -RepoUrl "https://github.com/florin-rotaru-md/Statics.git" `
-  -RepoBranch "master" `
+  -RepoBranch "ui-dev-waa" `
   -RepoToken $repoToken `
-  -ProjectPath "Apps/Waa/Waa.Server/Waa.Server.csproj" `
-  -HostName "api.waa.ro" `
+  -ProjectPath "Apps/Waa/Waa.Client.Server/Waa.Client.Server.csproj" `
+  -HostName "ui.dev.waa.ro" `
   -GreenHttpPort 8001 `
   -BlueHttpPort 8002 `
   -CCSConfigFile "C:\config\ccs.json" `
